@@ -1,0 +1,4 @@
+outs:
+- md5: 2849d64d7ca978dac0f1335e9040ea21
+  size: 3515
+  path: test_results.txt
