@@ -15,7 +15,7 @@ def data():
             os.getcwd(), "starter/data/census_train_cleaned.csv"))
     except FileNotFoundError:
         df = pd.read_csv(os.path.join(
-            os.getcwd(), "../data/census_train_cleaned.csv"))
+            os.getcwd(), "data/census_train_cleaned.csv"))
 
     return df
 
@@ -51,7 +51,7 @@ def test_process_data(data):
             os.getcwd(), "starter/model/encoder_test.joblib"))
     else:
         encoder = load(os.path.join(
-            os.getcwd(), "../model/encoder_test.joblib"))
+            os.getcwd(), "model/encoder_test.joblib"))
 
     if os.path.exists(os.path.join(os.getcwd(),
                                    "starter/model/lb_test.joblib")):
@@ -59,7 +59,7 @@ def test_process_data(data):
             os.getcwd(), "starter/model/lb_test.joblib"))
     else:
         lb = load(os.path.join(
-            os.getcwd(), "../model/lb_test.joblib"))
+            os.getcwd(), "model/lb_test.joblib"))
 
     cats = list(data.select_dtypes(include='object').columns)[:-1]
 
@@ -82,7 +82,7 @@ def test_process_encoder(data):
             os.getcwd(), "starter/model/encoder_test.joblib"))
     else:
         encoder_test = load(os.path.join(
-            os.getcwd(), "../model/encoder_test.joblib"))
+            os.getcwd(), "model/encoder_test.joblib"))
 
     if os.path.exists(os.path.join(os.getcwd(),
                                    "starter/model/lb_test.joblib")):
@@ -90,7 +90,7 @@ def test_process_encoder(data):
             os.getcwd(), "starter/model/lb_test.joblib"))
     else:
         lb_test = load(os.path.join(
-            os.getcwd(), "../model/lb_test.joblib"))
+            os.getcwd(), "model/lb_test.joblib"))
 
     cats = list(data.select_dtypes(include='object').columns)[:-1]
 
