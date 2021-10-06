@@ -37,5 +37,5 @@ jobs:
       run: dvc pull
     #- name: Run Flake8
     #   run: flake8
-    #- name: Run pytest
-    #  run: pytest -s
+    - name: Run pytest
+      run: pytest -s
