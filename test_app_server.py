@@ -18,14 +18,14 @@ def test_post_hi_salary():
     response = client.post("/predict", json={
         "workclass": "Private",
         "education": "Prof-school",
-        "marital_status": "Married-civ-spouse",
+        "marital-status": "Married-civ-spouse",
         "occupation": "Exec-managerial",
         "relationship": "Unmarried",
         "race": "White",
         "sex": "Male",
-        "native_country": "United-States",
+        "native-country": "United-States",
         "age": 35,
-        "hours_per_week": 40
+        "hours-per-week": 40
 
     })
     assert response.status_code == 200
@@ -36,14 +36,14 @@ def test_post_low_salary():
     response = client.post("/predict", json={
         "workclass": "Private",
         "education": "Some-college",
-        "marital_status": "Separated",
+        "marital-status": "Separated",
         "occupation": "Adm-clerical",
         "relationship": "Own-child",
         "race": "Black",
         "sex": "Male",
-        "native_country": "United-States",
+        "native-country": "United-States",
         "age": 21,
-        "hours_per_week": 40
+        "hours-per-week": 40
     })
     assert response.status_code == 200
     assert response.json() == {"prediction": "<=50K"}

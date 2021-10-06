@@ -40,6 +40,6 @@ def get_score():
             logging.info(line)
             slice_values.append(line)
 
-    with open('data/test_results.txt', 'w') as out:
+    with open('data/slice_output.txt', 'w') as out:
         for slice_value in slice_values:
             out.write(slice_value + '\n')
