@@ -21,5 +21,5 @@ Check Heroku deployed API
 Check Heroku deployed API using **python heroku_api_test.py**
 
 ## CI/CD
-Every new commit triggers a [test pipeline](https://github.com/edwards158/fastapi-heroku/blob/master/.github/workflows/python-app.yml) &nbsp;,which triggers pull from DVC and exectute Pytest and Flake8 with Github actions.  
+Every new commit triggers a [test pipeline](https://github.com/edwards158/fastapi-heroku/blob/master/.github/workflows/python-app.yml)&nbsp;, which triggers pull from DVC and exectute Pytest and Flake8 with Github actions.  
 
