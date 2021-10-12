@@ -1,5 +1,5 @@
 
-### Deploying a Scalable ML Pipeline in Production
+## Deploying a Scalable ML Pipeline in Production
 
 Deploy a machine learning model on Heroku. Use Git and DVC to track code, data and model while developing a simple classification model on the Census Income Data Set. After creating the model, the finalize the model for production by checking its performance on slices and writing a model card encapsulating key knowledge about the model. Implement a Continuous Integration and Continuous Deployment framework and ensure pipeline passes a series of unit tests before deployment. Lastly, an API will be written using FastAPI and tested locally. After successful deployment, the API will be tested live using the requests module.
 
